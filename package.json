@@ -1,0 +1,28 @@
+{
+  "name": "example-web-api",
+  "version": "1.0.0",
+  "description": "exemplo de api com nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danzok/example-web-api.git"
+  },
+  "keywords": [
+    "api-nodejs",
+    "example-api"
+  ],
+  "author": "danzok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danzok/example-web-api/issues"
+  },
+  "homepage": "https://github.com/danzok/example-web-api#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0"
+  }
+}
