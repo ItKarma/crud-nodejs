@@ -9,3 +9,4 @@ const checkList = mongoose.Schema({
 })
 
 module.exports = mongoose.model('CheckList', checkList);
+
