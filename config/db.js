@@ -1,9 +1,9 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
-
-mongoose.connect('');
-
-const db = mongoose.connection;
-
-db.once('open', () => {
-  console.log('Conectado com o banco de dados.')
+mongoose.Promise = global.Promise;
+module.exports = mongoose.connect(process.env.URL_DB)
+  .then(() => {
+  console.log('Conncted database')
+}).catch((e)=>{
+  console.log(e)
 })
