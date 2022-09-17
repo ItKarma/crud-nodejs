@@ -25,7 +25,7 @@ router.post('/', async (req, res) =>{
   }
 })
 
-router.get('/', async ( req, res) =>{
+router.get('/:id', async ( req, res) =>{
   try {
     let findOneList = await checkList.findById(req.params.id);
     res.status(200).json({ findOneList })
@@ -34,4 +34,22 @@ router.get('/', async ( req, res) =>{
   }
 })
 
+router.put('/:id', async ( req, res) =>{
+  let { name } = req.body
+  try {
+   let updateList = await checkList.findByIdAndUpdate(req.params.id, { name }, { new : true }) 
+    res.status(200).json({ updateList })
+  } catch (error) {
+    res.status(422).json({ "Error" : error })
+  }
+})
+
+router.delete('/:id', async ( req, res) => {
+  try {
+   let deleteList = await checkList.findOneAndRemove(req.params.id)
+    res.status(200).json({ message : "Lista deletada com sucesso !."})
+  } catch (error) {
+    res.status(422).json({ message : "Ouve um error interno"})
+  }
+})
 module.exports = router;
