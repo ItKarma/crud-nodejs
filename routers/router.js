@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const checkList = require('./models/checklist');
-const task = require('./models/task')
+const checkList = require('../models/checklist');
+const task = require('../models/task')
 
 
 router.get('/', async ( req, res)=>{

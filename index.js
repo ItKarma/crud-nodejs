@@ -1,7 +1,8 @@
 const express = require('express');
 const path = require('path')
 const logger = require('morgan')
-const routers = require('./router');
+const routerList = require('./routers/router');
+const routerPages = require('./routers/pages')
 const app = express();
 
 require('./config/db')
@@ -12,7 +13,8 @@ app.use(express.json())
 app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs')
 
-app.use('/', routers)
+app.use('/', routerPages)
+app.use('/checklist', routerPages)
 
 app.listen(3000, ()=>{
   console.log('Servidor ligado !!.')
