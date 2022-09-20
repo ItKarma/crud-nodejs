@@ -14,26 +14,26 @@
     </div>
 
     <div class="columns is-multiline">
-      <% findLists.forEach(checList => { %>
+      <% findList.forEach(checkList => { %>
         <div class="column is-one-quarter">
           <div class="card has-background-white-ter">
             <div class="card-content">
               <p class="subtitle is-size-5">
-                <%= findList.name %>
+                <%= checkList.name %>
               </p>
               <p class="subtitle is-size-6">
-                <%= findlist.tasks.count %> tarefas
+                <%= checkList.tasks %> tarefas
               </p>
             </div>
             <footer class="card-footer">
               <p class="card-footer-item">
                 <span>
-                  <a href="/checklists/<%= findList._id %>">Ver</a>
+                  <a href="/checklists/<%= checkList._id %>">Ver</a>
                 </span>
               </p>
               <p class="card-footer-item">
                 <span>
-                  <a href="/checklists/<%= findList.id %>/edit">Editar</a>
+                  <a href="/checklists/<%= checkList.id %>/edit">Editar</a>
                 </span>
               </p>
               <p class="card-footer-item">

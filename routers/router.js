@@ -6,7 +6,7 @@ const task = require('../models/task')
 router.get('/', async ( req, res)=>{
   try {
     let findList = await checkList.find();
-    res.status(200).json({ findList });
+    res.status(200).render('checklists/index.ejs', { findList : findList })
   } catch (error) {
     console.error(error);
     res.status(500).json({ error})
