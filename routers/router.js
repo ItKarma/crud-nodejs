@@ -28,7 +28,7 @@ router.post('/new', async (req, res) =>{
 router.get('/:id', async ( req, res) =>{
   try {
     let findOneList = await checkList.findById(req.params.id);
-    res.status(200).render('checklists/show.ejs', { findOneList : findOneList })
+   // res.status(200).render('checklists/show.ejs', { findOneList : findOneList })
   } catch (error) {
     res.status(500).json( error )
   }
