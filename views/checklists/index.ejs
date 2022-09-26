@@ -9,7 +9,7 @@
         <h1 class="title size-4">Listas de Tarefas</h1>
       </div>
       <div class="column is-one-fifth">
-        <a href="/checklists/new" class="button is-success is-small">Nova Lista</a>
+        <a href="/checkList/new" class="button is-success is-small">Nova Lista</a>
       </div>
     </div>
 
@@ -28,17 +28,17 @@
             <footer class="card-footer">
               <p class="card-footer-item">
                 <span>
-                  <a href="/checklists/<%= checkList._id %>">Ver</a>
+                  <a href="/checkList/<%= checkList._id %>">Ver</a>
                 </span>
               </p>
               <p class="card-footer-item">
                 <span>
-                  <a href="/checklists/<%= checkList.id %>/edit">Editar</a>
+                  <a href="/checkList/<%= checkList.id %>/edit">Editar</a>
                 </span>
               </p>
               <p class="card-footer-item">
                 <span>
-                  <a href="/checklists/<%= checkList.id %>?_method=delete" class="has-text-danger">Remover</a>
+                  <a href="/checkList/<%= checkList.id %>?_method=delete" class="has-text-danger">Remover</a>
                 </span>
               </p>
             </footer>
