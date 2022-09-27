@@ -10,3 +10,7 @@ Para treinar e melhorar minhas experiências com node.js .
 
 
 # index
+
+![home](https://telegra.ph/file/6c148e87de14988dfc8a2.png)
+
+⚠️ Nota - como falei o meu foco é back-end , então para testar as rotas será preciso baixar na sua maquina instalar as dependências com ```npm i ``` apos isso usar o postman para testar .
