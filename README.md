@@ -6,7 +6,7 @@ Para treinar e melhorar minhas experiências com node.js .
 
  • meu foco é só no back-end no desenvolvimento das ações com banco de dados não relacional.
  
- • tentei criar uma estrutura "MVC", porém com algumas coisas a mais haha.
+ • tentei criar uma arquitetura "MVC", porém com algumas coisas a mais haha.
 
 
 # index
